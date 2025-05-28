@@ -76,3 +76,7 @@ button:hover {
   color: #333;
   margin-bottom: 5px;
 }
+
+textarea {
+  resize: none; /* verhindert Größenveränderung */
+}
