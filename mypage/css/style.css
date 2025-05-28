@@ -1,82 +1,51 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f0f2f5;
+  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
+  padding: 0 1rem;
+  background: #f9f9f9;
 }
 
-.container {
-  max-width: 700px;
-  margin: auto;
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-h1 {
+header {
+  background: #2d2d2d;
+  color: white;
+  padding: 1rem;
   text-align: center;
-  color: #0070f3;
 }
 
-.user-input {
+.auth, .user-input {
+  margin: 1rem auto;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-input, textarea {
-  padding: 12px;
-  font-size: 1em;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-button {
-  background-color: #0070f3;
-  color: white;
-  padding: 10px;
-  font-size: 1em;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #005ad3;
-}
-
-#postFeed {
-  margin-top: 20px;
-}
-
-.post {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  background: #f9f9f9;
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.post img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-.post-content {
-  flex: 1;
-}
-
-.username {
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 5px;
+  gap: 0.5rem;
 }
 
 textarea {
-  resize: none; /* verhindert Größenveränderung */
+  resize: none; /* verhindert Größenänderung */
+}
+
+#postFeed {
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+.post {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.post img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.post-content .username {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
 }

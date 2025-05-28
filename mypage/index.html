@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Wotschington-Forum</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -11,30 +11,28 @@
     <h1>Wotschington-Forum</h1>
   </header>
 
-  <!-- 🔐 Authentifizierung -->
+  <!-- Auth-Bereich -->
   <section class="auth">
     <input type="email" id="email" placeholder="E-Mail" />
     <input type="password" id="password" placeholder="Passwort" />
-    <button onclick="register()">Registrieren</button>
-    <button onclick="login()">Login</button>
-    <button onclick="logout()">Logout</button>
+    <button id="registerBtn">Registrieren</button>
+    <button id="loginBtn">Login</button>
+    <button id="logoutBtn">Logout</button>
     <p id="userInfo">Nicht eingeloggt.</p>
   </section>
 
-  <!-- 📝 Beitrag erstellen (nur sichtbar bei Login) -->
+  <!-- Eingabefeld nur für eingeloggte User -->
   <section class="user-input" style="display: none;">
     <input type="text" id="username" placeholder="Benutzername (optional)" />
     <textarea id="postInput" placeholder="Was willst du sagen?"></textarea>
-    <button onclick="postMessage()">Posten</button>
+    <button id="postBtn">Posten</button>
   </section>
 
-  <!-- 📰 Beiträge -->
+  <!-- Beiträge -->
   <section id="postFeed"></section>
 
-  <!-- Firebase SDK -->
+  <!-- Firebase SDK und App-Logik -->
   <script type="module" src="js/firebase.js"></script>
-
-  <!-- App-Logik -->
   <script type="module" src="js/app.js"></script>
 </body>
 </html>
